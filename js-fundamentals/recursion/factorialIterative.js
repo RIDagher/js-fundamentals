@@ -12,3 +12,5 @@ function factorialIterative(n) {
 }
 
 console.log(factorialIterative(5))
+
+module.exports = factorialIterative
