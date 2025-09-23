@@ -2,9 +2,16 @@
 // 2- Call it with a sample output
 // 3- Assert that the result matches the expectation using expect(...).toBe(...).
 
-
 const findMax = require("../arrays/findMax.js")
 const removeDuplicates = require("../arrays/removeDuplicates.js")
+const containsDuplicate = require("../arrays/containsDuplicate.js")
+
+describe("check if array contains duplicate", () => {
+
+  test("return true ", () => {
+    expect(containsDuplicate([1,2,3,1])).toBe(true)
+  })
+})
 
 // toBe checks for object identity (reference equality)
 test("find max in array", () => {
